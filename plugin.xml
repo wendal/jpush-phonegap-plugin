@@ -27,9 +27,9 @@
 
             <header-file src="src/ios/Plugins/JPushPlugin.h"/>
             <source-file src="src/ios/Plugins/JPushPlugin.m"/>
-           
+
             <header-file src="src/ios/lib/APService.h" />
-            <source-file src="src/ios/lib/libPushSDK-1.8.3.a" framework="true" />
+            <source-file src="src/ios/lib/libPushSDK-1.8.5.a" framework="true" />
             <header-file src="src/ios/Plugins/AppDelegate+JPush.h"/>
             <source-file src="src/ios/Plugins/AppDelegate+JPush.m"/>
             <resource-file src="src/ios/PushConfig.plist" />
@@ -42,12 +42,12 @@
             <framework src="UIKit.framework" weak="true" />
             <framework src="Security.framework" weak="true" />
             <framework src="libz.dylib" weak="true" />
-            
+
         </platform>
-        
+
     <!-- android -->
     <platform name="android">
-    
+
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="JPushPlugin">
                 <param name="android-package" value="cn.jpush.phonegap.JPushPlugin"/>
@@ -158,7 +158,7 @@
         <source-file src="src/android/armeabi/libjpush175.so" target-dir="libs/armeabi"/>
         <source-file src="src/android/armeabi-v7a/libjpush175.so" target-dir="libs/armeabi-v7a"/>
         <source-file src="src/android/arm64-v8a/libjpush175.so" target-dir="libs/arm64-v8a"/>
-        
+
         <source-file src="src/android/JPushPlugin.java" target-dir="src/cn/jpush/phonegap"/>
         <source-file src="src/android/MyReceiver.java" target-dir="src/cn/jpush/phonegap"/>
     	<source-file src="src/android/test_notification_layout.xml" target-dir="res/layout"/>
